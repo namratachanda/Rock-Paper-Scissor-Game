@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="style.css"/>
+    <!-- <link rel="stylesheet" href="cssFile/responsiveMOB.css"/>
+    <link rel="stylesheet" href="cssFile/responisiveTAB.css"/>
+    <link rel="stylesheet" href="cssFile/responsiveLAP.css"/> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rock+3D&display=swap" rel="stylesheet">
+</head>
+<body id="bd">
+    <div id="main">
+        <div class="img"><img class="title-img"src="title-logo.png"  alt="first-logo"></div>
+        <div class="title"><h2 class="title-heading">Rock Paper & Scissor</h2></div>
+        <div class="img"><img class="title-img" src="title-logo-second.png" alt="second-logo"></div>  
+    </div>
+    <div id="button-div"> 
+        <button id="start" onclick="startGame()">Play</button>
+        <button id="stop" onclick="stopGame()">Exit</button>
+    </div>
+    <div id="Game">
+        <div id="scoreboard">
+            <button id="user">YOU : </button>
+            <div id="iteration"></div>
+            <button id="comp">COMPUTER : </button>
+        </div>
+        <div id="GameContent">
+            <div id="chooseText"><p>CHOOSE ONE </p></div>
+            <div id="element-container"> 
+            <div class="element element-img" id="rock-div"><img src="rock.png" id="rock" onclick="rpsGame(this)"></div>
+            <div class="element element-img" id="paper-div"><img src="paper.png" id="paper" onclick="rpsGame(this)"></div>
+            <div class="element element-img" id="sicssor-div"><img src="scissor.png" id="scissor" onclick="rpsGame(this)"></div>
+            </div> 
+            <!-- <div class="element-container" >
+                <p class="element ptag">ROCK</p>
+                <p class="element ptag">PAPER</p>
+                <p class="element ptag">SCISSOR</p>
+            </div> -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
